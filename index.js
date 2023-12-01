@@ -17,5 +17,5 @@ app.use(function (req, res, next) {
 });
 app.use("/users", userRoutes);
 // app-use for routes above
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; // it will run on 5001 port if specified in .env file otherwise it will run on 3000 port
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}!!!`));
